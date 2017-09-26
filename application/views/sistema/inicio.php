@@ -5,7 +5,7 @@ and open the template in the editor.
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
         <meta http-equiv="Content-Type" content="text/html">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -33,7 +33,7 @@ and open the template in the editor.
                                         <a class="btn btn-block btn-lg btn-success">Proveedores</a>
                                     </div>
                                     <div class="col-md-3">
-                                        <a class="btn btn-success">Activos Fijos</a>
+                                        <a href="<?php echo base_url(); ?>index.php/activos" class="btn btn-success">Activos Fijos</a>
                                     </div>
                                     <div class="col-md-3">
                                         <a class="btn btn-success">Productos</a>

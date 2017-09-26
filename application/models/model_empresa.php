@@ -18,6 +18,7 @@ class model_empresa extends CI_Model {
     }
 
     public function get_empresas() {
+        $this->db->where('estado_empresa',1);
         $empresa = $this->db->get('empresa');
         if ($empresa->num_rows() > 0) {
             return $empresa->result();
