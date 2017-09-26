@@ -1,7 +1,4 @@
-<?php
-
-if (!defined('BASEPATH'))
-    exit('No direct script access allowed');
+<?php if (!defined('BASEPATH')) exit('No direct script access allowed');
 
 /*
  * To change this template, choose Tools | Templates
@@ -11,7 +8,7 @@ if (!defined('BASEPATH'))
 /**
  * Description of loggin
  *
- * @author DIT
+ * @author Isaid Alexander Reyes Requena
  */
 class loggin extends CI_Controller {
 
@@ -61,10 +58,6 @@ class loggin extends CI_Controller {
                 echo json_encode($respuesta);
             }
         }
-    }
-    
-    public function inicio() {
-        $this->load->view('sistema/activos_fijos/activos_fijos');
     }
 
 }

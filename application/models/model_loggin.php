@@ -11,7 +11,7 @@ if (!defined('BASEPATH'))
 /**
  * Description of model_loggin
  *
- * @author DIT
+ * @author Isaid Alexander Reyes Requena
  */
 class model_loggin extends CI_Model {
 
