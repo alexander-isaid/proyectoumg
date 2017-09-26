@@ -30,30 +30,30 @@ and open the template in the editor.
                                 </div>
                                 <div class="row">
                                     <div class="col-md-3">
-                                        <a class="btn btn-block btn-lg btn-success">Proveedores</a>
+                                        <a href="#"> <img src="<?php echo base_url(); ?>img/icon_menu/proveedor.png" width="60%"/></a>
                                     </div>
                                     <div class="col-md-3">
-                                        <a href="<?php echo base_url(); ?>index.php/activos" class="btn btn-block btn-lg btn-success">Activos Fijos</a>
+                                        <a href="<?php echo base_url(); ?>index.php/activos"><img src="<?php echo base_url(); ?>img/icon_menu/Activo-Fijo.png" width="60%"/></a>
                                     </div>
                                     <div class="col-md-3">
                                         <a class="btn btn-block btn-lg btn-success">Productos</a>
                                     </div>
                                     <div class="col-md-3">
-                                        <a class="btn btn-block btn-lg btn-success">Bancos</a>
+                                        <a href=""> <img src="<?php echo base_url(); ?>img/icon_menu/banco.png" width="60%"/></a>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-3">
-                                        <a class="btn btn-block btn-lg btn-success">Empresas</a>
+                                        <a href=""> <img src="<?php echo base_url(); ?>img/icon_menu/empresa.png" width="60%"/></a>
                                     </div>
                                     <div class="col-md-3">
-                                        <a class="btn btn-block btn-lg btn-success">Usuarios</a>
+                                        <a href=""> <img src="<?php echo base_url(); ?>img/icon_menu/usuario.png" width="60%"/></a>
                                     </div>
                                     <div class="col-md-3">
-                                        <a class="btn btn-block btn-lg btn-success">Facturas de proveedores</a>
+                                        <a href=""> <img src="<?php echo base_url(); ?>img/icon_menu/facturas.png" width="60%"/></a>
                                     </div>
                                     <div class="col-md-3">
-                                        <a class="btn btn-block btn-lg btn-success">Estadisticas</a>
+                                        <a href=""> <img src="<?php echo base_url(); ?>img/icon_menu/estadisticas.png" width="60%"/></a>
                                     </div>
                                 </div>
                             </div>
