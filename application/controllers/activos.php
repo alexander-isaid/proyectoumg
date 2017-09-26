@@ -9,7 +9,7 @@
 /**
  * Description of activos
  *
- * @author DIT
+ * @author Isaid Alexander Reyes Requena
  */
 class activos extends CI_Controller {
    

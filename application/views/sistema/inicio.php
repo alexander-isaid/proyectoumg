@@ -33,27 +33,27 @@ and open the template in the editor.
                                         <a class="btn btn-block btn-lg btn-success">Proveedores</a>
                                     </div>
                                     <div class="col-md-3">
-                                        <a href="<?php echo base_url(); ?>index.php/activos" class="btn btn-success">Activos Fijos</a>
+                                        <a href="<?php echo base_url(); ?>index.php/activos" class="btn btn-block btn-lg btn-success">Activos Fijos</a>
                                     </div>
                                     <div class="col-md-3">
-                                        <a class="btn btn-success">Productos</a>
+                                        <a class="btn btn-block btn-lg btn-success">Productos</a>
                                     </div>
                                     <div class="col-md-3">
-                                        <a class="btn btn-success">Bancos</a>
+                                        <a class="btn btn-block btn-lg btn-success">Bancos</a>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-3">
-                                        <a class="btn btn-success">Empresas</a>
+                                        <a class="btn btn-block btn-lg btn-success">Empresas</a>
                                     </div>
                                     <div class="col-md-3">
-                                        <a class="btn btn-success">Usuarios</a>
+                                        <a class="btn btn-block btn-lg btn-success">Usuarios</a>
                                     </div>
                                     <div class="col-md-3">
-                                        <a class="btn btn-success">Facturas de proveedores</a>
+                                        <a class="btn btn-block btn-lg btn-success">Facturas de proveedores</a>
                                     </div>
                                     <div class="col-md-3">
-                                        <a class="btn btn-success">Estadisticas</a>
+                                        <a class="btn btn-block btn-lg btn-success">Estadisticas</a>
                                     </div>
                                 </div>
                             </div>

@@ -8,7 +8,7 @@
 /**
  * Description of loggin
  *
- * @author DIT
+ * @author Isaid Alexander Reyes Requena
  */
 class loggin extends CI_Controller {
 

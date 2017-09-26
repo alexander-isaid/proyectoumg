@@ -8,7 +8,7 @@
 /**
  * Description of model_empresa
  *
- * @author DIT
+ * @author Isaid Alexander Reyes Requena
  */
 class model_empresa extends CI_Model {
 

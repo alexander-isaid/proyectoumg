@@ -8,7 +8,7 @@
 /**
  * Description of sistema
  *
- * @author DIT
+ * @author Isaid Alexander Reyes Requena
  */
 class sistema extends CI_Controller {
 

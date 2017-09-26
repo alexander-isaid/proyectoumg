@@ -11,7 +11,7 @@ if (!defined('BASEPATH'))
 /**
  * Description of contabilidad
  *
- * @author DIT
+ * @author Isaid Alexander Reyes Requenas
  */
 class contabilidad extends CI_Controller {
 

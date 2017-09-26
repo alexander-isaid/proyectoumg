@@ -4,6 +4,11 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
+/**
+ * Description of activos_model
+ *
+ * @author Isaid Alexander Reyes Requena
+ */
 class M_empresa extends CI_Model{
     
     public function __construct() {
