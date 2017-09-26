@@ -20,15 +20,64 @@ class activos extends CI_Controller {
         $this->load->library('session');
         $this->load->helper('file');
         $this->load->model('model_loggin');
+        
     }
-    public function index() {
+    public function index(){
         if ($this->model_loggin->esta_loggiado() == TRUE) {
             $data['usuario'] = $this->session->userdata['usuario'];
             $data['password'] = $this->session->userdata['password'];
             $data['id_user']= $this->session->userdata['id_user'];
-            $this->load->view('sistema/activos_fijos/activos_fijos',$data);
+            $this->load->view('sistema/activos_fijos/listado_activos',$data);
         }else{
             $this->load->view('publico/index');
         }
     }
+    
+    public function nuevo() {
+        if ($this->model_loggin->esta_loggiado() == TRUE) {
+            $data['usuario'] = $this->session->userdata['usuario'];
+            $data['password'] = $this->session->userdata['password'];
+            $data['id_user']= $this->session->userdata['id_user'];
+            $this->load->view('sistema/activos_fijos/nuevo_activos_fijos',$data);
+        }else{
+            $this->load->view('publico/index');
+        }
+    }
+    
+    public function crear_activo() {
+        if ($this->model_loggin->esta_loggiado() == TRUE) {
+            $data['usuario'] = $this->session->userdata['usuario'];
+            $data['password'] = $this->session->userdata['password'];
+            $data['id_user']= $this->session->userdata['id_user'];
+            
+            $this->load->library('activos_lib');
+            $activo=new activos_lib();
+            $respuesta=$activo->nuevo_activo();
+            
+            echo $respuesta;
+            
+        }else{
+            $this->load->view('publico/index');
+        }
+    }
+    
+    public function editar($id_activo=NULL) {
+        if($id_activo!=NULL){
+            if ($this->model_loggin->esta_loggiado() == TRUE) {
+                $data['usuario'] = $this->session->userdata['usuario'];
+                $data['password'] = $this->session->userdata['password'];
+                $data['id_user']= $this->session->userdata['id_user'];
+                $data['idActivo']= $id_activo;
+                $this->load->view('sistema/activos_fijos/editar_activos_fijos',$data);
+            }else{
+                $this->load->view('publico/index');
+            }
+        }else{
+            
+        }       
+    }
+    
+    
+    
+    
 }
