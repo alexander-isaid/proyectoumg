@@ -13,7 +13,7 @@
  */
 class activos extends CI_Controller {
    
-    public function __construct() {
+    function __construct() {
         parent::__construct();
         $this->load->helper(array('form', 'url', 'html'));
         $this->load->library('form_validation');
@@ -49,12 +49,12 @@ class activos extends CI_Controller {
             $data['usuario'] = $this->session->userdata['usuario'];
             $data['password'] = $this->session->userdata['password'];
             $data['id_user']= $this->session->userdata['id_user'];
-            
-            $this->load->library('activos_lib');
-            $activo=new activos_lib();
-            $respuesta=$activo->nuevo_activo();
-            
-            echo $respuesta;
+            $info_lib=array(
+                'id_activo'=>0
+            );
+            $this->load->library('activos_lib',$info_lib);
+            $activo = $this->activos_lib->nuevo_activo();
+            echo json_encode($activo);
             
         }else{
             $this->load->view('publico/index');
