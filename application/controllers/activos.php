@@ -50,7 +50,8 @@ class activos extends CI_Controller {
             $data['password'] = $this->session->userdata['password'];
             $data['id_user']= $this->session->userdata['id_user'];
             $info_lib=array(
-                'id_activo'=>0
+                'id_activo'=>0,
+                'id_user'=>$data['id_user'],
             );
             $this->load->library('activos_lib',$info_lib);
             $activo = $this->activos_lib->nuevo_activo();

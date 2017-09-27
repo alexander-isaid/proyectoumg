@@ -116,6 +116,14 @@ and open the template in the editor.
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-group">
+                                                <div class="thumbnail">
+                                                    <img src="<?php echo base_url();?>img/no_image.png" class="img-responsive" width="25%" >
+                                                    <div class="caption">
+                                                        <input type="file" name="imagen_activo" id="imagen_activo">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
                                                 <label class="control-label">Nombre del activo</label>
                                                 <input class="form-control" id="name_activo"
                                                 placeholder="Ejemplo Telefono motorola" type="text" name="name_activo">
@@ -126,14 +134,14 @@ and open the template in the editor.
                                             </div>
                                             <div class="form-group">
                                                 <label class="control-label">Valor recidual</label>
-                                                <input class="form-control" type="text">
+                                                <input class="form-control" type="text" name="valor_residual" id="valor_residual">
                                             </div>
+                                        </div>
+                                        <div class="col-md-6">
                                             <div class="form-group">
                                                 <label class="control-label">Fecha de compra</label>
                                                 <input class="form-control fecha" type="text" name="fecha_compra" id="fecha_compra">
                                             </div>
-                                        </div>
-                                        <div class="col-md-6">
                                             <div class="form-group">
                                                 <label class="control-label">Proveedor</label>
                                                 <select name="proveedor" id="proveedor" class="form-control">
