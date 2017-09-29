@@ -119,11 +119,15 @@ and open the template in the editor.
                                                 <div class="thumbnail">
                                                     <img src="<?php echo base_url();?>img/no_image.png" class="img-responsive" width="25%" >
                                                     <div class="caption">
+<<<<<<< HEAD
 <<<<<<< Updated upstream
                                                         <input type="file" name="imagen_activo" id="imagen_activo">
 =======
                                                         <input type="file" name="userfile" id="imagen_activo">
 >>>>>>> Stashed changes
+=======
+                                                        <input type="file" name="userfile" id="imagen_activo">
+>>>>>>> Activos-fijos
                                                     </div>
                                                 </div>
                                             </div>
