@@ -7,7 +7,6 @@ and open the template in the editor.
 <html>
     <head>
         <meta charset="UTF-8">
-        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
         <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css" rel="stylesheet" type="text/css">
@@ -81,7 +80,7 @@ and open the template in the editor.
                     success: function(data) {
                         var json_obj = $.parseJSON(data);
                         if(json_obj.tipo==1){
-                            
+                            alert(json_obj.msg);
                         }else {
                             $('#errors').append(json_obj.msg).addClass('alert alert-danger');
                         }
@@ -153,13 +152,13 @@ and open the template in the editor.
                                             <div class="form-group">
                                                 <label class="control-label">Proveedor</label>
                                                 <select name="proveedor" id="proveedor" class="form-control">
-                                                    <option>Seleccione un proveedor</option>
+                                                    <option value="">Seleccione un proveedor</option>
                                                 </select>
                                             </div>
                                             <div class="form-group">
                                                 <label class="control-label">Factura</label>
                                                 <select name="factura" id="factura" class="form-control">
-                                                    <option>Selecciona un factura</option>
+                                                    <option value="">Selecciona un factura</option>
                                                 </select>
                                             </div>
                                         </div>
