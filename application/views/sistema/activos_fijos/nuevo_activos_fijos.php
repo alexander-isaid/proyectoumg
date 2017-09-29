@@ -118,15 +118,7 @@ and open the template in the editor.
                                                 <div class="thumbnail">
                                                     <img src="<?php echo base_url();?>img/no_image.png" class="img-responsive" width="25%" >
                                                     <div class="caption">
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-                                                        <input type="file" name="imagen_activo" id="imagen_activo">
-=======
                                                         <input type="file" name="userfile" id="imagen_activo">
->>>>>>> Stashed changes
-=======
-                                                        <input type="file" name="userfile" id="imagen_activo">
->>>>>>> Activos-fijos
                                                     </div>
                                                 </div>
                                             </div>
@@ -151,13 +143,13 @@ and open the template in the editor.
                                             </div>
                                             <div class="form-group">
                                                 <label class="control-label">Proveedor</label>
-                                                <select name="proveedor" id="proveedor" class="form-control">
+                                                <select name="proveedor" id="id_partner" class="form-control">
                                                     <option value="">Seleccione un proveedor</option>
                                                 </select>
                                             </div>
                                             <div class="form-group">
                                                 <label class="control-label">Factura</label>
-                                                <select name="factura" id="factura" class="form-control">
+                                                <select name="factura" id="id_factura" class="form-control">
                                                     <option value="">Selecciona un factura</option>
                                                 </select>
                                             </div>
