@@ -49,10 +49,9 @@ public function __construct(array $info_data) {
         $this->CI->form_validation->set_rules('valor_bruto','Valor bruto del activo','required|trim');
         $this->CI->form_validation->set_rules('valor_residual','Valor Recidual','decimal|trim');
         $this->CI->form_validation->set_rules('fecha_compra','Fecha de compra','required|trim');
-        $this->CI->form_validation->set_rules('id_partner','Proveedor','trim');
-        $this->CI->form_validation->set_rules('id_user_asig','Usuario asignado','trim');
+        $this->CI->form_validation->set_rules('proveedor','Proveedor','trim');
         $this->CI->form_validation->set_rules('id_empresa','Empresa','trim');
-        $this->CI->form_validation->set_rules('id_factura','Factura','trim');
+        $this->CI->form_validation->set_rules('factura','Factura','trim');
         $this->CI->form_validation->set_message('required', 'El campo %s: es requerido');
         $this->CI->form_validation->set_message('decimal','El campo %s debe ser numerico');
         
@@ -75,14 +74,14 @@ public function __construct(array $info_data) {
                 $array_data_activo=array(
                     'nombre_activo'=>$this->CI->input->post('name_activo'),
                     'valor_activo'=>$this->CI->input->post('valor_bruto'),
-                    //'valor_residual'=>$this->CI->input->post('valor_residual'),
+                    'valor_residual'=>$this->CI->input->post('valor_residual'),
                     'fecha_compra'=>$date_payment,
                     'fecha_creacion'=> date("Y-m-d H:i:s"),
                     'id_usuario'=>$id_user,
-                    'id_partner'=>$this->CI->input->post('id_partner'),
-                    'id_usario_asignado'=>$this->CI->input->post('id_user_asig'),
+                    'id_partner'=>$this->CI->input->post('proveedor'),
+//                    'id_usario_asignado'=>$this->CI->input->post('id_user_asig'),
                     'empresa_id'=>$this->CI->input->post('id_empresa'),
-                    'id_factura'=>$this->CI->input->post('id_factura'),
+                    'id_factura'=>$this->CI->input->post('factura'),
                     'img_activo'=>$respuesta_img['file_name'],
                 );
                 $res_activo= $this->CI->activos_model->insert_activo($array_data_activo);
@@ -110,6 +109,9 @@ public function __construct(array $info_data) {
     
     
     public function calcular_depreciacion(){
+        
+        
+        
         
     }
     public function modificar_activo() {
