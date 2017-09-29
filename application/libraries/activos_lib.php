@@ -143,18 +143,25 @@ public function __construct(array $info_data) {
             
             
             
+            
+            
+            
+            
+            
+            
+            
             if($respuesta_img['tipo']==1){
                 $array_data_activo=array(
-                    'nombre_activo'=>$_POST['name_activo'],
-                    'valor_activo'=>$_POST['valor_activo'],
-                    'valor_residual'=>$_POST['valor_residual'],
-                    'fecha_compra'=>$_POST['fecha_compra'],
+                    'nombre_activo'=>$this->CI->input->post('name_activo'),
+                    'valor_activo'=>$this->CI->input->post('valor_activo'),
+                    'valor_residual'=>$this->CI->input->post('valor_residual'),
+                    'fecha_compra'=>$this->CI->input->post('fecha_compra'),
                     'fecha_creacion'=> date("Y-m-d H:i:s"),
                     'id_usuario'=>$id_usuario,
-                    'id_partner'=>$_POST['id_partner'],
-                    'id_usario_asignado'=>$_POST['id_user_asig'],
-                    'empresa_id'=>$_POST['id_empresa'],
-                    'id_factura'=>$_POST['id_factura'],
+                    'id_partner'=>$this->CI->input->post('id_partner'),
+                    'id_usario_asignado'=>$this->CI->input->post('id_user_asig'),
+                    'empresa_id'=>$this->CI->input->post('id_empresa'),
+                    'id_factura'=>$this->CI->input->post('id_factura'),
                     'img_activo'=>$respuesta_img['file_name'],
                 );
                 $this->CI->load->activos_model->insert_activo();
