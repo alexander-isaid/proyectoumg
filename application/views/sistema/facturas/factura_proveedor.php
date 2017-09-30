@@ -94,89 +94,100 @@
                     </div>
                     <div class="col-md-12">
                         <div class="row">
-                            <form  class="form-horizontal" id="factura_proveedor">
-                                <div class="col-md-12">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <div class="col-sm-4">
-                                                <label class="control-label">Proveedor</label>
-                                            </div>
-                                            <div class="col-sm-8">
-                                                <select name="proveedor" id="proveedor" class="form-control">
-                                                    <option>1</option>
-                                                    <option>2</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="col-sm-4">
-                                                <label class="control-label">No. factura proveedor</label>
-                                            </div>
-                                            <div class="col-sm-8">
-                                                <input type="text" name="no_factura_pro" id="no_factura_pro" class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="col-sm-4">
-                                                <label class="control-label">Plazo de pago</label>
-                                            </div>
-                                            <div class="col-sm-8">
-                                                <input type="text" name="plazo_pago" id="plazo_pago" class="form-control">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <div class="col-sm-4">
-                                                <label class="control-label">Fecha de factura</label>
-                                            </div>
-                                            <div class="col-sm-8">
-                                                <input type="text" id="fecha_factura" name="fecha_factura" class="form-control fecha">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="col-sm-4">
-                                                <label class="control-label">Fecha de vencimiento</label>
-                                            </div>
-                                            <div class="col-sm-8">
-                                                <input type="text" name="no_factura_pro" id="no_factura_pro" class="form-control fecha">
-                                            </div>
-                                        </div>
-                                    </div>
+                            
+                            <div class="panel panel-primary">
+                                <div class="panel-heading">
+                                  <h3 class="panel-title text-center">Facturas de proveedor</h3>
                                 </div>
-                                <div class="col-md-12">
-                                    <div id="jsGrid"></div>
+                                <div class="panel-body">
+                                    
+                                    <form  class="form-horizontal" id="factura_proveedor">
+                                        <div class="col-md-12">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <div class="col-sm-4">
+                                                        <label class="control-label">Proveedor</label>
+                                                    </div>
+                                                    <div class="col-sm-8">
+                                                        <select name="proveedor" id="proveedor" class="form-control">
+                                                            <option>1</option>
+                                                            <option>2</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="col-sm-4">
+                                                        <label class="control-label">No. factura proveedor</label>
+                                                    </div>
+                                                    <div class="col-sm-8">
+                                                        <input type="text" name="no_factura_pro" id="no_factura_pro" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="col-sm-4">
+                                                        <label class="control-label">Plazo de pago</label>
+                                                    </div>
+                                                    <div class="col-sm-8">
+                                                        <input type="text" name="plazo_pago" id="plazo_pago" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <div class="col-sm-4">
+                                                        <label class="control-label">Fecha de factura</label>
+                                                    </div>
+                                                    <div class="col-sm-8">
+                                                        <input type="text" id="fecha_factura" name="fecha_factura" class="form-control fecha">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="col-sm-4">
+                                                        <label class="control-label">Fecha de vencimiento</label>
+                                                    </div>
+                                                    <div class="col-sm-8">
+                                                        <input type="text" name="no_factura_pro" id="no_factura_pro" class="form-control fecha">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div id="jsGrid"></div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="col-sm-9"></div>
+                                            <div class="col-sm-3">
+                                                <div class="form-group">
+                                                    <div class="col-sm-4">
+                                                        <label class="control-label">Sub total</label>
+                                                    </div>
+                                                    <div class="col-sm-8">
+                                                        <input type="text" name="subtotal" id="subtotal" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="col-sm-4">
+                                                        <label class="control-label">Impuesto</label>
+                                                    </div>
+                                                    <div class="col-sm-8">
+                                                        <input type="text" name="impuesto" id="impuesto" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="col-sm-4">
+                                                        <label class="control-label">Total</label>
+                                                    </div>
+                                                    <div class="col-sm-8">
+                                                        <input type="text" name="total" id="total" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                  
                                 </div>
-                                <div class="col-md-12">
-                                    <div class="col-sm-9"></div>
-                                    <div class="col-sm-3">
-                                        <div class="form-group">
-                                            <div class="col-sm-4">
-                                                <label class="control-label">Sub total</label>
-                                            </div>
-                                            <div class="col-sm-8">
-                                                <input type="text" name="subtotal" id="subtotal" class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="col-sm-4">
-                                                <label class="control-label">Impuesto</label>
-                                            </div>
-                                            <div class="col-sm-8">
-                                                <input type="text" name="impuesto" id="impuesto" class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="col-sm-4">
-                                                <label class="control-label">Total</label>
-                                            </div>
-                                            <div class="col-sm-8">
-                                                <input type="text" name="total" id="total" class="form-control">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
