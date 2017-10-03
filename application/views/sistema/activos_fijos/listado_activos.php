@@ -34,28 +34,9 @@ and open the template in the editor.
                     <div class="col-md-12">
                         <a href="<?php echo base_url(); ?>index.php/activos/nuevo" class="btn btn-success">Nuevo Activo</a>
                         <br><br>
-                        <ul class="media-list">
-                            <li class="media" style="cursor:pointer;" data-mostrar="1" onclick="location.href='<?php echo base_url(); ?>index.php/activos/editar';" onmouseover="this.style.backgroundColor='#BBC2C4'" onmouseout="this.style.backgroundColor=''" >
-                                <a class="pull-left"><img class="media-object" src="http://pingendo.github.io/pingendo-bootstrap/assets/placeholder.png" height="64" width="64"></a>
-                                <div class="media-body">
-                                  <h4 class="media-heading">Nombre del activo</h4>
-                                    <p>
-                                        Descripcion
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="media">
-                                <a class="pull-left" href="#"><img class="media-object" src="http://pingendo.github.io/pingendo-bootstrap/assets/placeholder.png" height="64" width="64"></a>
-                                <div class="media-body">
-                                    <h4 class="media-heading">Media heading</h4>
-                                    <p>
-                                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
-                                        ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at,
-                                        tempus viverra turpis.
-                                    </p>
-                                </div>
-                            </li>
-                        </ul>
+                      
+                        
+                        
                     </div>
                 </div>
             </div>

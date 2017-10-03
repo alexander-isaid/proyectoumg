@@ -38,6 +38,19 @@
                 $(".fecha").datepicker();
             });
         </script>
+        <script>
+            $(document).ready(function() {
+
+                $(function() {
+                    $('#factura_proveedor').on('focus', '.datepicker', function() {
+                        $(this).datepicker();
+                    });
+
+
+                });
+                //               
+            });
+        </script>
         
         <script type="text/javascript">
             
@@ -77,9 +90,32 @@
                 });
             });
         </script>
+        
+        <script type="text/javascript">
+            $(document).on('submit', '#factura_proveedor', function(e) {
+                e.preventDefault();
+                var gridData = jQuery("#jsGrid").getRowData();
+                var postData = JSON.stringify(gridData);
+                //alert("JSON serialized jqGrid data:\n" + postData);
+                $.ajax({
+                    type: "POST",
+                    url: "<?php echo base_url();?>index.php/factura/nueva_factura",
+                    data : {
+                        jgGridData: postData,
+                        customData: "bla bla",
+                    },
+                    success: function(response, textStatus, xhr) {
+                        alert("success");
+                    },
+                    error: function(xhr, textStatus, errorThrown) {
+                        alert("error");
+                    }
+                });
+            });
+        </script>
     </head>   
     <body>
-        <?php echo $this->load->view('publico/elementos/menu'); ?>   
+        <?php $this->load->view('sistema/elementos/menu'); ?>
         <div class="section">
             <div class="container">
                 <div class="row">
@@ -138,7 +174,7 @@
                                                         <label class="control-label">Fecha de factura</label>
                                                     </div>
                                                     <div class="col-sm-8">
-                                                        <input type="text" id="fecha_factura" name="fecha_factura" class="form-control fecha">
+                                                        <input type="text" id="fecha_factura" name="fecha_factura" class="form-control datepicker">
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
@@ -146,7 +182,7 @@
                                                         <label class="control-label">Fecha de vencimiento</label>
                                                     </div>
                                                     <div class="col-sm-8">
-                                                        <input type="text" name="no_factura_pro" id="no_factura_pro" class="form-control fecha">
+                                                        <input type="text" name="no_factura_pro" id="no_factura_pro" class="form-control datepicker">
                                                     </div>
                                                 </div>
                                             </div>
@@ -155,7 +191,9 @@
                                             <div id="jsGrid"></div>
                                         </div>
                                         <div class="col-md-12">
-                                            <div class="col-sm-9"></div>
+                                            <div class="col-sm-9">
+                                                <input type="submit" id="sendButton" class="btn btn-success" value="Crear Factura">
+                                            </div>
                                             <div class="col-sm-3">
                                                 <div class="form-group">
                                                     <div class="col-sm-4">

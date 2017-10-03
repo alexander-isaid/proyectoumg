@@ -36,7 +36,7 @@ and open the template in the editor.
                 yearSuffix: ''
             };
             $.datepicker.setDefaults($.datepicker.regional['es']);
-            $(function() {
+            $(function(){
                 $(".fecha").datepicker();
             });
         </script>
@@ -93,7 +93,7 @@ and open the template in the editor.
         
     </head>
     <body>
-        <?php echo $this->load->view('publico/elementos/menu'); ?>   
+        <?php echo $this->load->view('sistema/elementos/menu'); ?>   
         <div class="section">
             <div class="container">
                 <div class="row">

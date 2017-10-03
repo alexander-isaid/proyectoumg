@@ -30,7 +30,7 @@ and open the template in the editor.
                                 </div>
                                 <div class="row">
                                     <div class="col-md-3">
-                                        <a href="#"> <img src="<?php echo base_url(); ?>img/icon_menu/proveedor.png" width="60%"/></a>
+                                        <a href="<?php echo base_url(); ?>index.php/proveedores"> <img src="<?php echo base_url(); ?>img/icon_menu/proveedor.png" width="60%"/></a>
                                     </div>
                                     <div class="col-md-3">
                                         <a href="<?php echo base_url(); ?>index.php/activos"><img src="<?php echo base_url(); ?>img/icon_menu/Activo-Fijo.png" width="60%"/></a>
@@ -50,7 +50,7 @@ and open the template in the editor.
                                         <a href=""> <img src="<?php echo base_url(); ?>img/icon_menu/usuario.png" width="60%"/></a>
                                     </div>
                                     <div class="col-md-3">
-                                        <a href=""> <img src="<?php echo base_url(); ?>img/icon_menu/facturas.png" width="60%"/></a>
+                                        <a href="<?php echo base_url(); ?>index.php/factura"> <img src="<?php echo base_url(); ?>img/icon_menu/facturas.png" width="60%"/></a>
                                     </div>
                                     <div class="col-md-3">
                                         <a href=""> <img src="<?php echo base_url(); ?>img/icon_menu/estadisticas.png" width="60%"/></a>

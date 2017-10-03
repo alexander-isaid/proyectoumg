@@ -8,9 +8,35 @@
 
 /**
  * Description of proveedores
+ * 
  *
  * @author ALEX-DEV
  */
-class proveedores {
+
+/** Clase */
+class proveedores extends CI_Controller{
     //put your code here
+    
+    public function __construct() {
+        parent::__construct();
+        $this->load->helper(array('form', 'url', 'html'));
+        $this->load->library('form_validation');
+        $this->load->library('session');
+        $this->load->helper('file');
+        $this->load->model('model_partner');
+        $this->load->model('model_loggin');
+    }
+    
+    public function index() {
+        if ($this->model_loggin->esta_loggiado() == TRUE) {
+            $data['usuario'] = $this->session->userdata['usuario'];
+            $data['password'] = $this->session->userdata['password'];
+            $data['id_user']= $this->session->userdata['id_user'];
+            $this->load->view('sistema/proveedores/nuevo_proveedor',$data);
+        }else{
+            $this->load->view('publico/index');
+        }
+    }
+    
+
 }
