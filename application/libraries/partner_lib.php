@@ -13,16 +13,24 @@
  */
 class partner_lib {
     private $CI;
+    private $id_proveedor;
     private $array=array();
     //put your code here
     
     public function __construct(array $info_data) {
         $this->CI = & get_instance();
         $this->array=$info_data;
-        $this->CI->load->model('model_usuario');
+        $this->CI->load->model('model_partner');
     }
     public function mostrar_partner() {
-        
+        $proveedores=array();
+        $proveedores=$this->CI->load->model_partner->get_partner();
+        if($proveedores != FALSE){
+            
+            echo json_encode($respuesta);
+        }else{
+            
+        }
     }
     public function info_partner() {
         

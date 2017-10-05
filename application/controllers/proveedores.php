@@ -38,5 +38,16 @@ class proveedores extends CI_Controller{
         }
     }
     
+    public function get_proveedores(){
+        if ($this->model_loggin->esta_loggiado() == TRUE) {
+            $data['usuario'] = $this->session->userdata['usuario'];
+            $data['password'] = $this->session->userdata['password'];
+            $data['id_user']= $this->session->userdata['id_user'];
+            
+        }else{
+            $this->load->view('publico/index');
+        }
+    }
+    
 
 }

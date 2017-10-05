@@ -28,12 +28,12 @@ class sistema extends CI_Controller {
             $data['password'] = $this->session->userdata['password'];
             $data['id_user']= $this->session->userdata['id_user'];
             $valid_empresa = $this->model_empresa->get_empresas();
-            if ($valid_empresa != FALSE) {
+            if($valid_empresa != FALSE){
                 $this->load->view("sistema/inicio", $data);
-            } else  {
+            }else{
                 $this->load->view('sistema/empresa/new_empresa', $data);
             }
-        } else {
+        }else{
             $this->load->view('publico/index');
         }
     }
